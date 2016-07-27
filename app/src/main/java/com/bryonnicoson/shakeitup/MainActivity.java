@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             return searchResponse;
         }
 
+        // test - fork change
         protected void onPostExecute(SearchResponse searchResponse) {
 
             for (int i = 0; i < searchResponse.businesses().size(); i++) {
@@ -107,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
             // TODO: return restaurants to ui adapter - for now, logging to validate...
+            // let's pretend i added something to the ui
             for (int inc = 0; inc < restaurants.size(); inc++) {
                 Log.i("RESTAURANTS", restaurants.get(inc).getName());
             }
